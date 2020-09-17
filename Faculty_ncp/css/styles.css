@@ -1,0 +1,14 @@
+.left{
+    text-align: left;
+ }
+ .cen{
+     text-align: center;
+ }
+  .left label{
+     display: inline-block;
+     text-align: right;
+     float: left;
+  }
+ .cen label{
+     display: inline-block;
+ }
