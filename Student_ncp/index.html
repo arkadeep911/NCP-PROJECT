@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/logolowres.png"/>
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
@@ -25,12 +25,12 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic">
-					<img src="images/logohighbackwhite.png" alt="IMG">
+					<img src="images/logo.png" alt="IMG">
 				</div>
 
 				<form class="login100-form validate-form">
@@ -53,7 +53,7 @@
 							<i class="fa fa-fw fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
-					
+
 					<div class="container-login100-form-btn">
 						<button  onclick="login()" class="login100-form-btn" id="log">
 							Login
@@ -69,25 +69,25 @@
 						</a>
 					</div>
 
-				
+
 				</form>
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 
 
 
 
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-	  
+
 		<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
-	  
+
 		<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 		<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
-	  
+
 		<!-- Add Firebase products that you want to use -->
 		<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
@@ -108,19 +108,19 @@
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
-            
+
           </script>
 
 
 <script>
-	
-	
+
+
 	function login(){
 		var email=document.getElementById("email").value;
-		
+
 
 var password=document.getElementById("pass").value;
-	
+
 	//Create User with Email and Password
 	firebase.auth().signInWithEmailAndPassword(email, password).then(function(result){
 		window.location.replace("homepage_stud.html");
@@ -138,8 +138,8 @@ var password=document.getElementById("pass").value;
 
 
 
-	
-<!--===============================================================================================-->	
+
+<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
