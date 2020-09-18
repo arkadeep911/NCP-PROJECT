@@ -1,229 +1,228 @@
 <!DOCTYPE html>
 <html>
-    <title>Attendance_faculty</title>
+<title>Attendance_faculty</title>
+
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/icons/logolowres.png"/>
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-   
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/icons/logolowres.png" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
 
 
-table{
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  padding: 40px;
-  margin-top: 60px;
-}
+    table {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      padding: 40px;
+      margin-top: 60px;
+    }
 
-td,th {
-  border: 1px solid #ddd;
-  padding: 20px;
-}
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
 
 
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color:rgba(0, 0, 0, 0.692);
-  color: white;
-}
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.692);
+      color: white;
+    }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  font: 10px;
-  text-align: center;
-}
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      font: 10px;
+      text-align: center;
+    }
 
-table.center{
-  margin-left:auto; 
-  margin-right:auto;
-}
-
-</style>
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
- 
-   
-   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-   
-       <div class="site-wrap" style="background-color: #000000">
-   
-   
-       <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner" style="background-color: #000000">
-           <div class="container">
-           <div class="d-flex align-items-center">
-   <div class="site-logo">
-       
-               <a href="index.html" class="d-block">
-                   <img src="images/download.png" alt="Image" class="img-fluid" height="150px" width="250px">
-               </a>
-             </div>
-         <div class="mr-auto">
-           <nav class="site-navigation position-relative text-right" role="navigation">
-             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-               <li>
-                 <a href="search.html" class="nav-link text-left"><i class="fa fa-home"></i>Home</a>
-               </li>
-            
-              
-               
-               <li>
-                   <a href="faculty_profile.html" class="nav-link text-left"><i class="fa fa-fw fa-user"></i>Profile</a>
-                 </li>
-                 <li>
-                  <a href="faculty_profile.html" class="nav-link text-left"><i class="fa fa-fw fa-envelope"></i>Messages</a>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap" style="background-color: #000000">
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner" style="background-color: #000000">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <a href="login.html" class="d-block">
+              <img src="images/download.png" alt="Image" class="img-fluid" height="150px" width="250px">
+            </a>
+          </div>
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li>
+                  <a href="search.html" class="nav-link text-left"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li>
+                  <a href="faculty_profile.html" class="nav-link text-left"><i class="fa fa-fw fa-user"></i>Profile</a>
+                </li>
+                <li>
+                  <a href="faculty_profile.html" class="nav-link text-left"><i
+                      class="fa fa-fw fa-envelope"></i>Messages</a>
                 </li>
                 <li>
                   <a href="#" class="nav-link text-left"><i class='fa fa-fw fa-calendar'></i>Time Table</a>
                 </li>
-                 <li>
-                   <a href="logout.html" class="nav-link text-left"><i class='fa fa-fw fa-sign-out'></i>Log out</a>
-                 </li>
-             </ul>                                                                                                                                                                                                                                                                                          </ul>
-           </nav>
-         </div>
-             <div class="ml-auto">
-               <div class="social-wrap">
-                
-                 <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
-                   class="icon-menu h3"></span></a>
-               </div>
-             </div>
-             </div>
-             
-            
-   
-             
-   
-           </div>
-         </div>
-               </header>
-<div class="attendance">
-    <div style="padding-left:20px;padding-top: 40px;font-family:Arial, Helvetica, sans-serif">
-        <h2>Student Attendance</h2>
+                <li>
+                  <a href="logout.html" class="nav-link text-left"><i class='fa fa-fw fa-sign-out'></i>Log out</a>
+                </li>
+              </ul>
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <div class="social-wrap">
+
+              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+                  class="icon-menu h3"></span></a>
+            </div>
+          </div>
+        </div>
       </div>
+  </div>
+  </header>
+  <div class="attendance">
+    <div style="padding-left:20px;padding-top: 40px; padding-right: 20px; font-family:Arial, Helvetica, sans-serif">
+      <h2>Student Attendance</h2>
     <table class="center">
-        <tr>
-          <th><b>Name</b></th>
-          <th><b>Present</b></th>
-          <th><b>Absent</b></th>
-          <th><b>Update</b></th>
-          <th><b>Med/OD Form</b></th>
-      
-        </tr>
-        <tr>
-          <td>Anitha</td>
-          <td><div class="radio">
-            <input type="radio" id='val1' name="optradio">
-       </div>
-        </td>
-        <td><div class="radio">
-            <input type="radio" id='val1' name="optradio">
-       </div>
-        </td>
-        <td><div class="radio">
-          <select name="type" id="attend">
-            <option value="sel">Select</option>
-            <option value="med">Medical</option>
-            <option value="OD">On Duty</option>
-          </select>
-          <br><br>
-       </div>
+      <tr>
+        <th><b>Name</b></th>
+        <th><b>Present</b></th>
+        <th><b>Absent</b></th>
+        <th><b>Update</b></th>
+        <th><b>Med/OD Form</b></th>
 
+      </tr>
+      <tr>
+        <td>Anitha</td>
+        <td>
+          <div class="radio">
+            <input type="radio" id='val1' name="optradio">
+          </div>
         </td>
-        <td><div class="radio">
-          <select name="type" id="attend">
-            <option value="sel">Yes</option>
-            <option value="med">No</option>
-          </select>
-          <br><br>
-       </div>
-       
+        <td>
+          <div class="radio">
+            <input type="radio" id='val1' name="optradio">
+          </div>
         </td>
-        
-        </tr>
-        <tr>
-            <td>Jerry</td>
-            <td><div class="radio">
-              <input type="radio" id='val2' name="optradio1">
-         </div>
-          </td>
-          <td><div class="radio">
-              <input type="radio" id='val2' name="optradio1">
-         </div>
-          </td>
-          <td><div class="radio">
+        <td>
+          <div class="radio">
             <select name="type" id="attend">
               <option value="sel">Select</option>
               <option value="med">Medical</option>
               <option value="OD">On Duty</option>
             </select>
             <br><br>
-         </div>
-  
-          </td>
-          <td><div class="radio">
+          </div>
+
+        </td>
+        <td>
+          <div class="radio">
             <select name="type" id="attend">
               <option value="sel">Yes</option>
               <option value="med">No</option>
             </select>
             <br><br>
-         </div>
-          
-          </tr>
-          <tr>
-            <td>Tom</td>
-            <td><div class="radio">
-              <input type="radio" id='val3' name="optradio2">
-         </div>
-          </td>
-          <td><div class="radio">
-              <input type="radio" id='val3' name="optradio2">
-         </div>
-          </td>
-          <td><div class="radio">
+          </div>
+
+        </td>
+
+      </tr>
+      <tr>
+        <td>Jerry</td>
+        <td>
+          <div class="radio">
+            <input type="radio" id='val2' name="optradio1">
+          </div>
+        </td>
+        <td>
+          <div class="radio">
+            <input type="radio" id='val2' name="optradio1">
+          </div>
+        </td>
+        <td>
+          <div class="radio">
             <select name="type" id="attend">
               <option value="sel">Select</option>
               <option value="med">Medical</option>
               <option value="OD">On Duty</option>
             </select>
             <br><br>
-         </div>
-  
-          </td>
-          <td><div class="radio">
+          </div>
+
+        </td>
+        <td>
+          <div class="radio">
             <select name="type" id="attend">
               <option value="sel">Yes</option>
               <option value="med">No</option>
             </select>
             <br><br>
-         </div>
-          
-          </tr>
-        
-      </table>
-      <br>
-      <input type="submit" value="Submit">
+          </div>
 
-    
+      </tr>
+      <tr>
+        <td>Tom</td>
+        <td>
+          <div class="radio">
+            <input type="radio" id='val3' name="optradio2">
+          </div>
+        </td>
+        <td>
+          <div class="radio">
+            <input type="radio" id='val3' name="optradio2">
+          </div>
+        </td>
+        <td>
+          <div class="radio">
+            <select name="type" id="attend">
+              <option value="sel">Select</option>
+              <option value="med">Medical</option>
+              <option value="OD">On Duty</option>
+            </select>
+            <br><br>
+          </div>
 
-</div>
+        </td>
+        <td>
+          <div class="radio">
+            <select name="type" id="attend">
+              <option value="sel">Yes</option>
+              <option value="med">No</option>
+            </select>
+            <br><br>
+          </div>
+
+      </tr>
+
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+  </div>
+  </div>
 
 
 </body>
+
 </html>
