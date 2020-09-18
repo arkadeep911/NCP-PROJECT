@@ -902,7 +902,7 @@ h1, h2, h3, h4, h5,
     .course-1-item .category h3 {
       color: #fff;
       font-size: 20px;
-      margin-bottom: 0; }
+      margin-bottom: 0 }
   .course-1-item .price {
     position: absolute;
     bottom: 0;

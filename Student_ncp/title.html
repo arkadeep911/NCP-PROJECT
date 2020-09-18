@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" type="image/png" href="images/icons/logolowres.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" type="text/css" href="C:\Users\priya\OneDrive\Desktop\Priya\css\styles.css">
  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
  <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -28,19 +30,19 @@
         <nav class="site-navigation position-relative text-right" role="navigation">
           <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
             <li>
-              <a href="index.html" class="nav-link text-left">Home</a>
+              <a href="index.html" class="nav-link text-left"><i class="fa fa-home"></i>Home</a>
             </li>
             <li>
-              <a href="title.html" class="nav-link text-left">Attendance</a>
+              <a href="title.html" class="nav-link text-left"><i class="fa fa-fw fa-check-square-o"></i>Attendance</a>
             </li>
             <li>
-              <a href="helpline.html" class="nav-link text-left">Help</a>
+              <a href="helpline.html" class="nav-link text-left"><i class="fa fa-fw fa-envelope"></i>Message</a>
             </li>
             <li>
-                <a href="student_profile.html" class="nav-link text-left">Profile</a>
+                <a href="student_profile.html" class="nav-link text-left"><i class="fa fa-fw fa-user"></i>Profile</a>
               </li>
               <li>
-                <a href="logout.html" class="nav-link text-left">Log out</a>
+                <a href="logout.html" class="nav-link text-left"><i class='fa fa-fw fa-sign-out'></i>Log out</a>
               </li>
           </ul>                                                                                                                                                                                                                                                                                          </ul>
         </nav>
@@ -61,51 +63,53 @@
         </div>
       </div>
             </header>
+            <br><br><br><br><br>
             <table style="width:100%">
-                <b>Name:</b>
-                <p>XXX</p>
-                <b>Roll number:</b>
-                <p></p><br>
-                <div class="left">
-                <label for="name">Name:</label>
-                </div>
-                <div class="cen">
-                <label for="name">Roll number:</label>
-                </div>
-               <div class="left">
-                <label for="c">Attendance:</label>
-                <select name="type" id="cars">
-                <option value="v">Regular</option>
-                <option value="s">Runtime</option>
-                </select>
-                </div>
-                <div class="cen">
-                    <label for="c">Semester:</label>
-                <select name="select" id="selecti">
-                    <option value="v">1</option>
-                    <option value="s">2</option>
-                    <option value="v">3</option>
-                    <option value="s">4</option>
-                    <option value="v">5</option>
-                    <option value="s">6</option>
-                    <option value="v">7</option>
-                    <option value="s">8</option>
-                </select>
-                </div>
-                <div class="left">
-                <b>Course:</b>
-                <select name="c" id="case">
-                    <option value="v">Select</option>
-                    <option value="v">Machine Learning</option>
-                    <option value="s">Net Centric Porgramming</option>
-                    <option value="v">Structural Interpretation of Computer Programming</option>
-                    <option value="s">Data Science</option>
-                    <option value="v">IOT</option>
-                    <option value="s">Wireless and Mobile Communication</option>
-                </select>
-                 </div>
-                
+              <tr>
+                <th><b>Name:</b></th>
+                <td>Student 1</td>
+              </tr>
+              <tr>
+                <th><b>Roll number:</b></th>
+                <td>cb.en.u4cse17264</td>
+              </tr>
+              <tr>
+                <th><b>Attendance:</b></th>
+                <td><select name="type" id="cars">
+                  <option value="s">Select</option>
+                  <option value="v">Regular</option>
+                  <option value="s">Runtime</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th><b>Semester:</b></th>
+                <td><select name="select" id="selecti">
+                  <option value="v">1</option>
+                  <option value="s">2</option>
+                  <option value="v">3</option>
+                  <option value="s">4</option>
+                  <option value="v">5</option>
+                  <option value="s">6</option>
+                  <option value="v">7</option>
+                  <option value="s">8</option>
+              </select></td>
+              </tr>
+              <tr>
+                <th> <b>Course:</b></th>
+                <td><select name="c" id="case">
+                  <option value="v">Select</option>
+                  <option value="v">Machine Learning</option>
+                  <option value="s">Net Centric Porgramming</option>
+                  <option value="v">Structural Interpretation of Computer Programming</option>
+                  <option value="s">Data Science</option>
+                  <option value="v">IOT</option>
+                  <option value="s">Wireless and Mobile Communication</option>
+              </select></td>
+              </tr>
+            </table>
+               <br>
                 <div style="padding-left:16px">
+                  <table>
                     <table align="center" style="width: 70%;" rowspan="20px" padding="13px"  border="1px"><div>
                         <tr>
                             <th>
@@ -184,7 +188,9 @@
                           <td>100</td>
                         </tr>
                         <p>
-                        
+                        </p>
+                        </div>
+                        </table>
                         </p>
                         <div class="cen">
                             <button style="text-align: center;" type="button" >Download PDF</button>
