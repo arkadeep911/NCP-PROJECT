@@ -120,15 +120,17 @@ table.center{
       </div>
   </header>
   <div class="attendance">
-    <div style="padding-left:20px;padding-top: 40px; padding-right: 20px; font-family:Arial, Helvetica, sans-serif">
-      <h2>Student Attendance</h2>
+    <div style="padding-left:20px;padding-top: 10px; padding-right: 20px; font-family:Arial, Helvetica, sans-serif">
+      <h1 style="padding-top: 30px;font-size:50px; color: #012F52;text-align: center; ">
+                <strong>Student Attendance</strong>
+            </h1>
     <table class="center">
         <tr>
           <th><b>Name</b></th>
           <th><b>Present</b></th>
           <th><b>Absent</b></th>
           <th><b>Update</b></th>
-          <th><b>Med/OD Form</b></th>
+          <th><b>Reason</b></th>
 
         </tr>
         <tr>
@@ -148,17 +150,15 @@ table.center{
               <option value="sel">Select</option>
               <option value="med">Medical</option>
               <option value="OD">On Duty</option>
+              <option value="Late">Late</option>
             </select>
             <br><br>
           </div>
 
         </td>
         <td>
-          <div class="radio">
-            <select name="type" id="attend">
-              <option value="sel">Yes</option>
-              <option value="med">No</option>
-            </select>
+          <div>
+            <input></input>
             <br><br>
           </div>
 
@@ -180,18 +180,17 @@ table.center{
               <option value="sel">Select</option>
               <option value="med">Medical</option>
               <option value="OD">On Duty</option>
+              <option value="Late">Late</option>
             </select>
             <br><br>
          </div>
 
           </td>
-          <td><div class="radio">
-            <select name="type" id="attend">
-              <option value="sel">Yes</option>
-              <option value="med">No</option>
-            </select>
-            <br><br>
-         </div>
+          <td>
+            <div>
+              <input></input>
+              <br><br>
+            </div>
 
           </tr>
           <tr>
@@ -209,23 +208,28 @@ table.center{
               <option value="sel">Select</option>
               <option value="med">Medical</option>
               <option value="OD">On Duty</option>
+              <option value="Late">Late</option>
             </select>
             <br><br>
          </div>
 
           </td>
-          <td><div class="radio">
-            <select name="type" id="attend">
-              <option value="sel">Yes</option>
-              <option value="med">No</option>
-            </select>
-            <br><br>
-         </div>
+          <td>
+            <div>
+              <input></input>
+              <br><br>
+            </div>
 
           </tr>
       </table>
       <br>
-      <input type="submit" value="Submit">
+      <center>
+      <div class="row">
+          <div class="col-12">
+              <input type="submit" value="Update" class="btn btn-primary btn-lg px-5" onclick="show_alert();">
+          </div>
+      </div>
+    </center>
     </table>
     <br>
   </div>
