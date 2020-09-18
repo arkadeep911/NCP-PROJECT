@@ -168,7 +168,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #000000;
+  background: #202020;
 }
 
 .wrap-login100 {
@@ -184,7 +184,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 177px 130px 33px 95px;
+  padding: 105px 130px 105px 95px;
 }
 
 /*------------------------------------------------------------------
