@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5,
         padding: 0px 0;
         margin-top: 20px;
         margin-left: 0px;
-        background-color: : #000000;
+        background-color: #000000;
         -webkit-transition: 0.2s 0s;
         -o-transition: 0.2s 0s;
         transition: 0.2s 0s; }
@@ -892,11 +892,15 @@ h1, h2, h3, h4, h5,
     margin-right: auto; }
 
 .course-1-item {
+  height:500px;
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1); }
   .course-1-item figure {
     position: relative; }
   .course-1-item .category {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
     background: #51be78;
     padding: 20px; }
     .course-1-item .category h3 {
